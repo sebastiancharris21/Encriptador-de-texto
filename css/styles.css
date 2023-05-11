@@ -54,12 +54,14 @@ body{
     margin: 20px 0;
 }
 
-.encriptar {
+.encriptar{
   resize: none;
   border: none;
   width: 70%;
   height: 350px;
   margin: 10px auto;
+  font-size: 1.5em;
+  color: darkblue;
 
 }
 
@@ -77,6 +79,8 @@ body{
     width: 70%;
     height: 350px;
     margin: 10px auto;
+    font-size: 1.5em;
+    color: darkblue;
 }
 
 .bi-exclamation-circle-fill{
