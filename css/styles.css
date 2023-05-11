@@ -57,9 +57,10 @@ body{
 .encriptar {
   resize: none;
   border: none;
-  width: 80%;
-  height: 300px;
+  width: 70%;
+  height: 350px;
   margin: 10px auto;
+
 }
 
 .contenedor_desincriptador{
@@ -73,9 +74,16 @@ body{
 .desencriptar{
     resize: none;
     border: none;
-    width: 80%;
-    height: 300px;
+    width: 70%;
+    height: 350px;
     margin: 10px auto;
+}
+
+.bi-exclamation-circle-fill{
+    font: 1em 'Roboto';
+    /* background: violet; */
+    width: 70%;
+    margin: 15px auto;
 }
 /* footer */
 
@@ -150,6 +158,12 @@ body{
         height: 329px;
         margin: 10px auto;
     }
+    
+    #icono_exclamacion{
+        font: 0.9em 'Roboto'; 
+        width: 70%;
+        margin: 15px auto;
+    }
 }
 
 /* Mediaquery: Mobile */
@@ -213,10 +227,17 @@ body{
         flex-flow: column;
         align-items: center;
     }
+
     .desencriptar{
         resize: none;
         width: 315px;
         height: 229px;
+    }
+
+    #icono_exclamacion{
+        font: 0.7em 'Roboto'; 
+        width: 70%;
+        margin: 15px auto;
     }
 
 }
