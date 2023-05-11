@@ -1,0 +1,181 @@
+*{
+ box-sizing: border-box;
+}
+
+html{
+    background: #ECE7E8;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+/* header */
+
+.contenedor_header{
+    /* background-color: blue; */
+    width: 100%;
+}
+
+.contenedor_logo{
+    display: flex;
+    flex-flow: row;
+}
+
+.logoAlura{
+    width: 120px;
+    height: 48px;
+    margin: 20px 10px;
+}
+
+.parrafo_principal{
+    font-size: 1.6em;
+    margin: 30px 0 0 100px;
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+    
+}
+/* main */
+.contenedor_main{
+    background: green;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.contenedor_encriptador{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.contenedor_desincriptador{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* footer */
+
+
+
+
+/* MediaQuery Tablet */
+@media (max-width: 768px){
+    body{
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .contenedor_header{
+        /* background: violet; */
+        width: 100%;
+
+    }
+
+    .contenedor_logo{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .logoAlura{
+        width: 120px;
+        height: 48px;
+        margin: 25px 0 0 0;
+    }
+
+    .parrafo_principal{
+        font-size: 1.5em;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        font-weight: bold;
+        color: darkblue;
+    }
+    /* main tablet */
+
+    .contenedor_main{
+        width: 100%;
+        margin: 0 5px;
+        display: flex;
+        flex-flow: column;
+    }
+    .contenedor_encriptador{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .contenedor_desincriptador{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+}
+
+/* Mediaquery: Mobile */
+@media(max-width: 375px){
+
+    body{
+        font-family: 'Roboto', 'sans-serif';
+    }
+
+    .contenedor_header{
+        /* background: red; */
+        width: 100%;
+    }
+
+    .contenedor_logo{
+        display: flex;
+        flex-flow: column;
+    }
+    
+    .logoAlura{
+        width: 120px;
+        height: 48px;
+        margin: 25px 0 0 0;
+    }
+    
+    .parrafo_principal{
+        font-size: 1.3em;
+        width: 100%;
+        padding: 10px 0 0 0;
+        margin: 30px auto;
+        padding: 0 10px;
+        text-align: center;
+        font-weight: bold;
+        color: darkblue;
+    }
+
+    /* Main: Mobile*/
+    .contenedor_main{
+        width: 100%;
+        margin: 0 5px;
+        display: flex;
+        flex-flow: column;
+    }
+    .contenedor_encriptador{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .contenedor_desincriptador{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+}
+
