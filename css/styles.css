@@ -40,7 +40,7 @@ body{
 }
 /* main */
 .contenedor_main{
-    background: green;
+    /* background: green; */
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -62,7 +62,7 @@ body{
   margin: 10px auto;
   font-size: 1.5em;
   color: darkblue;
-
+  background: #ECE7E8;
 }
 
 .bi-exclamation-circle-fill{
@@ -70,10 +70,11 @@ body{
     /* background: violet; */
     width: 50%;
     margin: 15px auto;
+    color: #67808E;
 }
 
 .contenedor_buttons{
-    background: blue;
+    /* background: blue; */
     width: 90%; 
     text-align: center;
     margin: 10px auto;
@@ -82,11 +83,52 @@ body{
 .boton_encriptador{
     margin: 10px 10px;
     font-size: 1.5em;
+    background: darkblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.8em;
+    width: 40%;
+    /* transition-duration: 0.4s; */
+    cursor: pointer;
+    border: 2px solid darkblue;
+    
+}
+
+.boton_encriptador:hover{
+    background: white;
+    color: darkblue;
+    border: 2px solid darkblue;
+    
+}
+.boton_encriptador:active{
+    /* #666 */
+    box-shadow: 0 5px darkblue;
+    transform: translateY(4px);
 }
 
 .boton_desencriptador{
     margin: 10px 10px;
     font-size: 1.5em;
+    color:darkblue;
+    border: 3px solid darkblue;
+    font-weight: bold;
+    width: 40%;
+    border-radius: 0.8em;
+}
+
+.boton_desencriptador:hover{
+    margin: 10px 10px;
+    font-size: 1.5em;
+    background: darkblue;
+    width: 40%;
+    color: white;
+    border-radius: 0.8em;
+}
+.boton_desencriptador:active{
+    /* #666 */
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    border: 2x solid darkblue;
 }
 
 .contenedor_desincriptador{
@@ -107,7 +149,27 @@ body{
     color: darkblue;
 }
 
+.boton_copiar{
+    margin: 10px 10px;
+    font-size: 1.5em;
+    border-radius: 0.8em;
+    width: 50%;
+    color: darkblue;
+    font-weight: bold;
+    border: 2px solid darkblue;
+    /* transition-duration: 0.4s; */
+}
 
+.boton_copiar:hover{
+    background: darkblue;
+    color: white;
+}
+
+.boton_copiar:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    border: 2x solid darkblue;
+}
 
 
 /* footer */
