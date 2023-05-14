@@ -65,6 +65,30 @@ body{
 
 }
 
+.bi-exclamation-circle-fill{
+    font: 0.9em 'Roboto';
+    /* background: violet; */
+    width: 50%;
+    margin: 15px auto;
+}
+
+.contenedor_buttons{
+    background: blue;
+    width: 90%; 
+    text-align: center;
+    margin: 10px auto;
+}
+
+.boton_encriptador{
+    margin: 10px 10px;
+    font-size: 1.5em;
+}
+
+.boton_desencriptador{
+    margin: 10px 10px;
+    font-size: 1.5em;
+}
+
 .contenedor_desincriptador{
     width: 50%;
     display: flex;
@@ -83,12 +107,9 @@ body{
     color: darkblue;
 }
 
-.bi-exclamation-circle-fill{
-    font: 1em 'Roboto';
-    /* background: violet; */
-    width: 70%;
-    margin: 15px auto;
-}
+
+
+
 /* footer */
 
 /* fin del Desktop */
@@ -163,9 +184,10 @@ body{
         margin: 10px auto;
     }
     
-    #icono_exclamacion{
-        font: 0.9em 'Roboto'; 
-        width: 70%;
+    .bi-exclamation-circle-fill{
+        font: 1em 'Roboto'; 
+        width: 100%;
+        text-align: center;
         margin: 15px auto;
     }
 }
@@ -225,6 +247,13 @@ body{
         height: 229px;
     }
 
+    .bi-exclamation-circle-fill{
+        font: 0.8em 'Roboto'; 
+        width: 90%;
+        text-align: center;
+        margin: 15px auto;
+    }
+
     .contenedor_desincriptador{
         width: 100%;
         display: flex;
@@ -236,12 +265,6 @@ body{
         resize: none;
         width: 315px;
         height: 229px;
-    }
-
-    #icono_exclamacion{
-        font: 0.7em 'Roboto'; 
-        width: 70%;
-        margin: 15px auto;
     }
 
 }
