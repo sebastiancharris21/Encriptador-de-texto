@@ -308,22 +308,38 @@ body{
         display: flex;
         flex-flow: column;
         align-items: center;
-        background: red;
+        /* background: red; */
+        border-radius: 16px;
     }
 
     .encriptar{
         resize: none;
         width: 315px;
         height: 229px;
+        border-radius: 16px;
+
     }
 
     .bi-exclamation-circle-fill{
-        font: 0.8em 'Roboto'; 
+        font: 0.9em 'Roboto'; 
         width: 90%;
         text-align: center;
         margin: 15px auto;
+        color: #67808E;
     }
 
+    .contenedor_buttons{
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .boton_encriptador{
+        width: 40%;
+    }
+    
+    .boton_desencriptador{
+        width: 40%;
+    }
 
     .contenedor_desincriptador{
         width: 100%;
