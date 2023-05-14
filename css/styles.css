@@ -83,23 +83,23 @@ body{
 .boton_encriptador{
     margin: 10px 10px;
     font-size: 1.5em;
-    background: darkblue;
+    background: darkblue; 
     color: white;
     font-weight: bold;
     border-radius: 0.8em;
     width: 40%;
+    height: 50px;
     /* transition-duration: 0.4s; */
     cursor: pointer;
-    border: 2px solid darkblue;
-    
+    border: 1px solid darkblue;  
 }
 
 .boton_encriptador:hover{
     background: white;
     color: darkblue;
-    border: 2px solid darkblue;
-    
+    border: 1px solid darkblue;
 }
+
 .boton_encriptador:active{
     /* #666 */
     box-shadow: 0 5px darkblue;
@@ -110,9 +110,10 @@ body{
     margin: 10px 10px;
     font-size: 1.5em;
     color:darkblue;
-    border: 3px solid darkblue;
+    border: 1px solid darkblue;
     font-weight: bold;
     width: 40%;
+    height: 50px;
     border-radius: 0.8em;
 }
 
@@ -133,10 +134,14 @@ body{
 
 .contenedor_desincriptador{
     width: 50%;
+    background: white;
     display: flex;
     flex-flow: column;
     align-items: center;
+    border-radius: 30px;
     margin: 20px 0;
+    box-shadow: 3px 3px 6px #67808E;
+    border: 3px solid #ECE7E8;
 }
 
 .desencriptar{
@@ -144,19 +149,20 @@ body{
     border: none;
     width: 70%;
     height: 350px;
-    margin: 10px auto;
+    margin: 30px auto;
     font-size: 1.5em;
     color: darkblue;
 }
 
 .boton_copiar{
-    margin: 10px 10px;
+    margin: 20px 10px;
     font-size: 1.5em;
     border-radius: 0.8em;
     width: 50%;
+    height: 50px;
     color: darkblue;
     font-weight: bold;
-    border: 2px solid darkblue;
+    border: 1px solid darkblue;
     /* transition-duration: 0.4s; */
 }
 
@@ -168,7 +174,7 @@ body{
 .boton_copiar:active{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-    border: 2x solid darkblue;
+    border: 2px solid darkblue;
 }
 
 
@@ -281,11 +287,12 @@ body{
         font-size: 1.3em;
         width: 100%;
         padding: 10px 0 0 0;
-        margin: 30px auto;
-        padding: 0 10px;
+        margin: 40px auto;
+        padding: 10px 10px;
         text-align: center;
         font-weight: bold;
         color: darkblue;
+
     }
 
     /* Main: Mobile*/
@@ -301,6 +308,7 @@ body{
         display: flex;
         flex-flow: column;
         align-items: center;
+        background: red;
     }
 
     .encriptar{
@@ -315,6 +323,7 @@ body{
         text-align: center;
         margin: 15px auto;
     }
+
 
     .contenedor_desincriptador{
         width: 100%;
