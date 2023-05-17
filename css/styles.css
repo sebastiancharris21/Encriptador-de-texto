@@ -3,20 +3,23 @@
 }
 
 html{
-    background: #ECE7E8;
+    /* background: #ECE7E8; */
+    /* background: url(../img/taza_java.png) repeat-y; */
+    background: linear-gradient(#1CB5E0,#000046);
 }
 
 body{
     font-family: 'Roboto', 'sans-serif';
 }
-
-/* Desktop */
+ 
+/* Inicio: Desktop */
 
 /* header */
 
 .contenedor_header{
     /* background-color: blue; */
     width: 100%;
+
 }
 
 .contenedor_logo{
@@ -31,14 +34,16 @@ body{
 }
 
 .parrafo_principal{
-    font-size: 1.6em;
+    font-size: 2em;
     margin: 30px 0 0 100px;
     text-align: center;
     font-weight: bold;
     color: darkblue;
+    text-shadow: 1px 1px 2px white;
     
 }
-/* main */
+/* main: Desktop*/
+
 .contenedor_main{
     /* background: green; */
     width: 100%;
@@ -62,15 +67,20 @@ body{
   margin: 10px auto;
   font-size: 1.5em;
   color: darkblue;
-  background: #ECE7E8;
+  background: none;
+  border-radius: 11px;
+  color: white;
 }
+
 
 .bi-exclamation-circle-fill{
     font: 0.9em 'Roboto';
     /* background: violet; */
     width: 50%;
+    font-weight: bold;
     margin: 15px auto;
     color: #67808E;
+
 }
 
 .contenedor_buttons{
@@ -91,7 +101,7 @@ body{
     height: 50px;
     /* transition-duration: 0.4s; */
     cursor: pointer;
-    border: 1px solid darkblue;  
+    border: 1px solid white;  
 }
 
 .boton_encriptador:hover{
@@ -102,7 +112,7 @@ body{
 
 .boton_encriptador:active{
     /* #666 */
-    box-shadow: 0 5px darkblue;
+    box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
@@ -115,6 +125,7 @@ body{
     width: 40%;
     height: 50px;
     border-radius: 0.8em;
+    background: white;
 }
 
 .boton_desencriptador:hover{
@@ -123,13 +134,16 @@ body{
     background: darkblue;
     width: 40%;
     color: white;
+    border: 1px solid white;
     border-radius: 0.8em;
+    cursor: pointer;
 }
+
 .boton_desencriptador:active{
     /* #666 */
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-    border: 2x solid darkblue;
+    box-shadow: 0 5px white;
+    transform: translateY(4px); 
+
 }
 
 .contenedor_desincriptador{
@@ -152,6 +166,12 @@ body{
     margin: 30px auto;
     font-size: 1.5em;
     color: darkblue;
+    background: rgba(255,255,255,0.8) center url(../img/Muneco.png) no-repeat;
+}
+
+.desencriptar:hover{
+    background: white;
+    
 }
 
 .boton_copiar{
@@ -169,6 +189,7 @@ body{
 .boton_copiar:hover{
     background: darkblue;
     color: white;
+    cursor: pointer;
 }
 
 .boton_copiar:active{
@@ -177,11 +198,86 @@ body{
     border: 2px solid darkblue;
 }
 
+/* footer : desktop*/
+.footer_seccion{
+    margin: 30px 0;
+    width: 100%;
+    /* background: url(../img/taza_java.png); */
+    display: flex;
+    flex-flow: row;
+}
 
-/* footer */
+.contenedor_informacion{
+    display: flex;
+    flex-flow: row;
+    width: 70%;
+}
+
+.img_perfil{
+    margin: 10px 5px 30px 40px;
+    /* padding: 10px 10px; */
+    border-radius: 50%;
+    border: 3px solid white;
+    background-size: auto;
+    background-position: 50%;
+    width: 26%;
+}
+
+.informacion{
+ display: flex;
+ flex-flow: column;
+ margin: auto;
+ width: 50%;
+ font-size: 1.5em;
+ padding: 10px 10px;
+}
+
+.informacion > h2{
+    color: white;
+    margin: 10px 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.informacion > p{
+    color: white;
+    margin: 0px 10px;
+    font-size: 1em;
+}
+
+.links{
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    font-size: 1.5em;
+    align-items: center;
+    color: white;
+}
+
+.links:hover{
+    color: #1CB5E0 ;
+}
+
+.links_informacion{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+    
+}
+
+.links_informacion:hover{
+    color: #1CB5E0;
+    margin: 0 0 0 20px;
+}
+
+.links > i{
+    margin: 10px 10px;
+}
 
 /* fin del Desktop */
-
 
 
 /* MediaQuery Tablet */
@@ -209,7 +305,7 @@ body{
     }
 
     .parrafo_principal{
-        font-size: 1.5em;
+        font-size: 1.8em;
         width: 100%;
         margin: 10px auto;
         text-align: center;
@@ -236,6 +332,7 @@ body{
         width: 415px;
         height: 329px;
         margin: 10px auto;
+
     }
 
     .contenedor_desincriptador{
@@ -258,6 +355,38 @@ body{
         text-align: center;
         margin: 15px auto;
     }
+
+    .footer_seccion{
+    width: 100%;
+    /* background: url(../img/wave\ _footer.svg) repeat-x; */
+    display: flex;
+    flex-flow: row;
+    }
+
+    .contenedor_informacion{
+        width: 70%;
+    }
+
+    .img_perfil{
+        margin: 10px 20px;
+        border-radius: 100px;
+        border: 3px solid white;
+        width: 40%; 
+    }
+    
+    .informacion > h2{
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        color: white;
+
+    }
+
+    .informacion>p{
+        font-size: 0.6em;
+        margin: 5px 6px;
+    }
+
+
 }
 
 /* Mediaquery: Mobile */
@@ -352,6 +481,56 @@ body{
         resize: none;
         width: 315px;
         height: 229px;
+    }
+
+    .footer_seccion{
+    width: 100%;
+    /* background: 100px 100px url(../img/taza_java.png) center; */
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+    .contenedor_informacion{
+        /* background: pink; */
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    .img_perfil{
+        width: 130px;
+        height: 130px;
+        margin: 10px 10px;
+        align-items: flex-start;
+    }
+
+    .informacion{
+        width: 40%;
+    }
+
+    .informacion > h2{
+        letter-spacing: 1px;
+        color: white;
+        margin: 10px 5px;
+        font-size: 0.6em;
+        font-weight: bold;
+        font-family: 'Merriweather', serif;
+    }
+    
+    .informacion > p{
+        color: white;
+        margin: 0px 10px;
+        font-size: 0.4em;
+    }
+
+    
+    .links{
+        width: 30%;
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        font-size: 0.8em;
+        align-items: center;
+        color: white;
     }
 
 }
