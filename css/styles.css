@@ -70,6 +70,7 @@ body{
   background: none;
   border-radius: 11px;
   color: white;
+  outline: none;
 }
 
 
@@ -166,7 +167,8 @@ body{
     margin: 30px auto;
     font-size: 1.5em;
     color: darkblue;
-    background: rgba(255,255,255,0.8) center url(../img/Muneco.png) no-repeat;
+    /* background: rgba(255,255,255,0.8) center url(../img/Muneco.png) no-repeat; */
+    outline: none;
 }
 
 .desencriptar:hover{

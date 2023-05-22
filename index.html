@@ -28,16 +28,18 @@
     <main>
         <section class="contenedor_main">
             <div class="contenedor_encriptador">
-                <textarea name="textarea_1" class="encriptar" placeholder=" Ingrese texto aqui.." cols="40" rows="15" ></textarea>
-                <i class="bi: bi-exclamation-circle-fill"> Solo letras en minúsculas y sin acentos</i>
+                <form action="">
+                    <textarea id="area_encriptador" name="textarea_1" class="encriptar" placeholder=" Ingrese texto aqui.." cols="40" rows="15"></textarea>
+                </form>
+                <i id="icons_exclanacion" class="bi: bi-exclamation-circle-fill"> Solo letras en minúsculas y sin acentos</i>
                 <div class="contenedor_buttons">
-                    <button class="boton_encriptador">Encriptar</button>
-                    <button class="boton_desencriptador">Desincriptar</button>
+                    <button onclick="valor_encriptar()" class="boton_encriptador">Encriptar</button>
+                    <button onclick="valor_desencriptar()" class="boton_desencriptador">Desincriptar</button>
                 </div>
             </div>
             <div class="contenedor_desincriptador">
-                <textarea name="textarea_2" class="desencriptar" cols="40" rows="15" ></textarea>
-                <button class="boton_copiar">Copiar</button>
+                <textarea id="area_desencriptador" name="textarea_2" class="desencriptar" cols="40" rows="15" ></textarea>
+                <button onclick="copiar()" class="boton_copiar">Copiar</button>
             </div>
         </section>
     </main>
@@ -63,8 +65,7 @@
     </footer>
 
     <!-- Conexion DOM -->
-    <script>
-    </script>
+    <script src="js/logica_encriptador.js"></script>
 
 </body>
 </html>
